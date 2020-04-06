@@ -7,9 +7,16 @@ html {
   grid-column: 1 / 4;
 }
 #content {
-  grid-row: 2 / 3;
+  /* display: flex; */
+  background-color: whitesmoke;
+  grid-row: 3 / 4;
   grid-column: 3 / 4;
 }
+
+#resumeinfo {
+  padding: 20px;
+}
+
 body {
   font-family: 'Dosis';
   margin: 0;
@@ -34,15 +41,6 @@ body {
   align-items: center;
   width: 400px;
   object-fit: none;
-}
-#main {
-  background-color: whitesmoke;
-  height: 100%;
-  width: 100%;
-}
-
-h1 {
-  color: black;
 }
 
 #nav-bar {
