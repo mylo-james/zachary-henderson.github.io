@@ -1,21 +1,24 @@
 html {
-  font-size: calc(1em + 1vw);
+  font-size: calc(1em + 1vmax);
 }
 
 body {
   margin: 0;
   text-align: center;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #323232;
 }
 
 button {
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
+  margin: 3px;
+  height: 7vh;
+  border-radius: 3px;
   background-color: #a6ebc9;
   box-shadow: none;
+  border: none;
+  white-space: nowrap;
+  padding: 1vh 1vw;
 }
 
 body > * {
@@ -25,14 +28,13 @@ body > * {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: #fffdf7;
+  background: linear-gradient(#e7e6ff 20%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 body::-webkit-scrollbar {
+  background: transparent;
   width: 12px;
-  background-color: #fffdf7;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -43,15 +45,37 @@ body::-webkit-scrollbar-thumb {
 
 nav {
   height: 20vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
+  justify-content: space-between;
   font-size: 0.65em;
   color: #fffdf7;
+  background: #38cabd;
   background-color: #38cabd;
 }
 
 .nav__logo {
+  margin: 1vh 3vw;
+  height: 20vh;
+  position: absolute;
+}
+
+.nav__hamburger {
+  margin: 0 7vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__login {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 3vw;
+}
+
+nav img {
+  height: 100%;
+  object-fit: contain;
 }
 
 header {
@@ -62,25 +86,21 @@ header {
   height: 80vh;
   background: #38cabd;
   display: grid;
-  grid-template-rows: 3fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+.hero > * {
+  margin: 5vh 10vw 4vh 10vw;
 }
 
-.hero > * {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
 #hello {
-  justify-self: flex-start;
-  margin-left: 12vw;
+  overflow: hidden;
   font-size: 3em;
   font-weight: 800;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
 }
-
 #i-am {
-  justify-self: flex-end;
-  margin-right: 15vw;
+  align-self: flex-start;
 }
 .sidebar-nav {
   position: fixed;
@@ -96,6 +116,7 @@ header {
 
 main section {
   height: 1000px;
+  padding: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,5 +145,9 @@ footer {
 }
 
 .hover:hover {
-  filter: brightness(2);
+  filter: brightness(1.5);
+}
+
+body script {
+  display: none;
 }

@@ -8,24 +8,23 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Dosis"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script async defer src="index.js"></script>
     <title>zhenderson.dev</title>
   </head>
   <body>
-    <aside class="sidebar-nav hidden menu">
-      This is where I will put my hamburger stuff
-    </aside>
     <header>
       <nav class="nav">
-        <div class="nav__hamburger hover">///</div>
         <figure class="nav__logo hover">
-          Logo
-          <img id="logo" />
+          <img src="./img/hexagon-512.png" />
         </figure>
-        <div class="nav__linkedin hover">LinkedIn</div>
-        <div class="nav__github hover">GitHub</div>
-        <div class="nav__blog hover">Blog??</div>
-        <button class="nav__contact-me hover">Contact Me!</button>
+        <div class="nav__login">
+          <button id="login-button">Log In</button>
+          <button id="signup-button">Sign Up</button>
+        </div>
       </nav>
       <section class="hero">
         <span id="hello">Hello!</span>
@@ -42,6 +41,11 @@
       <section class="coding">This will be about my coding background</section>
     </main>
 
-    <footer>This is a footer</footer>
+    <footer>
+      <div class="nav__linkedin hover">LinkedIn</div>
+      <div class="nav__github hover">GitHub</div>
+      <div class="nav__blog hover">Blog??</div>
+      <button class="nav__contact-me hover">Contact Me!</button>
+    </footer>
   </body>
 </html>
