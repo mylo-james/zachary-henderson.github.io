@@ -1,5 +1,5 @@
 html {
-  font-size: calc(1em + 1vmax);
+  font-size: calc(1em + 1vh);
 }
 
 body {
@@ -7,18 +7,20 @@ body {
   text-align: center;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
-  color: #323232;
+  color: #333333;
+  background-color: #38cabd;
 }
 
 button {
+  font-size: 1em;
   margin: 3px;
-  height: 7vh;
+  height: 7vmin;
   border-radius: 3px;
-  background-color: #a6ebc9;
+  background: #38cabd;
   box-shadow: none;
   border: none;
   white-space: nowrap;
-  padding: 1vh 1vw;
+  padding: 1vmin 1vmax;
 }
 
 body > * {
@@ -29,7 +31,7 @@ body > * {
 
 body::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: linear-gradient(#e7e6ff 20%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(#fdfffc 20%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 body::-webkit-scrollbar {
@@ -44,25 +46,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
-  height: 20vh;
+  height: 15vmin;
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-end;
   justify-content: space-between;
   font-size: 0.65em;
-  color: #fffdf7;
+  color: #fdfffc;
   background: #38cabd;
   background-color: #38cabd;
 }
 
 .nav__logo {
-  margin: 1vh 3vw;
-  height: 20vh;
+  margin: 5vmin 5vmax;
+  height: 20vmin;
   position: absolute;
 }
 
 .nav__hamburger {
-  margin: 0 7vw;
+  margin: 0 7vmax;
   display: flex;
   justify-content: flex-start;
 }
@@ -70,7 +72,6 @@ nav {
 .nav__login {
   display: flex;
   justify-content: flex-end;
-  margin: 0 3vw;
 }
 
 nav img {
@@ -79,32 +80,51 @@ nav img {
 }
 
 header {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vmin - 15vmin);
+  color: #fdfffc;
 }
 
 .hero {
-  height: 80vh;
+  height: 300px;
+  width: 500px;
   background: #38cabd;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
+  grid-template-rows: 100px 45px 130px 25px;
 }
+
 .hero > * {
-  margin: 5vh 10vw 4vh 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e71d36;
 }
 
 #hello {
-  overflow: hidden;
+  align-items: flex-end;
+
+  border-radius: 20px 20px 0 0;
   font-size: 3em;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
-#i-am {
-  align-self: flex-start;
+
+#name {
+  color: #333333;
+  font-family: 'Rock Salt', cursive;
+  font-size: 3em;
+  background-color: #fdfffc;
+}
+
+.sticker-shape {
+  border-radius: 0 0 20px 20px;
 }
 .sidebar-nav {
   position: fixed;
-  width: 20vw;
+  width: 20vmax;
   margin: 0;
   height: 100%;
   display: flex;
@@ -116,7 +136,7 @@ header {
 
 main section {
   height: 1000px;
-  padding: 5vw;
+  padding: 5vmax;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,16 +144,16 @@ main section {
 }
 
 .about-me {
-  background: linear-gradient(90deg, #e7e6ff 20%, rgba(231, 29, 54, 0.25) 100%);
+  background: linear-gradient(90deg, #fdfffc 20%, rgba(231, 29, 54, 0.25) 100%);
 }
 .education {
-  background: linear-gradient(90deg, rgba(56, 202, 189, 0.75) 0, #e7e6ff 80%);
+  background: linear-gradient(90deg, rgba(56, 202, 189, 0.25) 0, #fdfffc 80%);
 }
 .work {
-  background: linear-gradient(90deg, #e7e6ff 20%, rgba(231, 29, 54, 0.5) 100%);
+  background: linear-gradient(90deg, #fdfffc 20%, rgba(231, 29, 54, 0.25) 100%);
 }
 .coding {
-  background: linear-gradient(90deg, rgba(56, 202, 189, 0.75) 0, #e7e6ff 80%);
+  background: linear-gradient(90deg, rgba(56, 202, 189, 0.25) 0, #fdfffc 80%);
 }
 
 footer {
