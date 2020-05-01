@@ -228,3 +228,44 @@ body script {
 .fadeout {
   animation: fadeout 1s 1s forwards;
 }
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  background-color: #fdfffc;
+}
+
+.wrapper svg {
+  width: 60%;
+  position: absolute;
+}
+
+path {
+  stroke: none;
+  fill: none;
+  stroke-dasharray: 1200;
+  opacity: 0;
+
+  animation: write 2s 3s cubic-bezier(0, 0.23, 1, 0.1) forwards;
+}
+
+@keyframes write {
+  0% {
+    stroke: #333;
+    stroke-dashoffset: 1200;
+  }
+  30% {
+    opacity: 10;
+  }
+
+  90% {
+    fill: rgba(33, 33, 33, 0);
+  }
+
+  100% {
+    opacity: 1;
+    stroke: #333;
+    fill: rgba(33, 33, 33, 1);
+    stroke-dashoffset: 0;
+  }
+}
