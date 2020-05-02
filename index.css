@@ -260,13 +260,13 @@ path {
   }
 
   90% {
-    fill: rgba(33, 33, 33, 0);
+    fill: rgba(51, 51, 51, 0);
   }
 
   100% {
     opacity: 1;
     stroke: #333;
-    fill: rgba(33, 33, 33, 1);
+    fill: rgba(51, 51, 51, 1);
     stroke-dashoffset: 0;
   }
 }
